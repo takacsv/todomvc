@@ -136,6 +136,7 @@ input[type="checkbox"] {
 }
 
 #new-todo {
+        display: none;
 	padding: 16px 16px 16px 60px;
 	border: none;
 	background: rgba(0, 0, 0, 0.02);
@@ -280,10 +281,6 @@ label[for='toggle-all'] {
 
 #todo-list li .destroy:after {
 	content: '✖';
-}
-
-#todo-list li:hover .destroy {
-	display: block;
 }
 
 #todo-list li .edit {
@@ -525,6 +522,10 @@ hr {
 	border-top-color: rgba(0, 0, 0, .04);
 }
 
+.learn-bar {
+  display: none;
+  }
+
 .learn-bar > .learn {
 	position: absolute;
 	width: 272px;
@@ -542,7 +543,7 @@ hr {
 @media (min-width: 899px) {
 	.learn-bar {
 		width: auto;
-		margin: 0 0 0 300px;
+		margin: 0;
 	}
 
 	.learn-bar > .learn {
