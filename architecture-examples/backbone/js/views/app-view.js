@@ -68,6 +68,8 @@ var app = app || {};
                             {
                               "title":"Schedule a short meeting with the management and set up lunch with peers.","order":5,"completed":false,"id":"ed73441c-9aff-89b3-11f9-bd5fec919c4c"
                             }]);
+
+                          app.todos.each(function (todo) { todo.save() });
                         }
                         
 		},
