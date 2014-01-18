@@ -43,29 +43,32 @@ var app = app || {};
 			// Suppresses 'add' events with {reset: true} and prevents the app view
 			// from being re-rendered for every model. Only renders when the 'reset'
 			// event is triggered at the end of the fetch.
-			// app.todos.fetch({reset: true});
-                        app.todos.reset([
-                          {
-                            "title":"Set up the work environment, including the desk, computer, email address and phone.","order":3,"completed":false,"id":"1d30fe19-cc2d-1db4-5a78-819ef9583ad2"
-                          },
-                          {
-                            "title":"Send out a welcome email to announce the arrival of the new hire two weeks prior the first day.","order":2,"completed":false,"id":"49d252fe-0660-0fae-5e95-17b0e411a3c4"
-                          },
-                          {
-                            "title":"Send reference materials and the schedule of the upcoming days.","order":1,"completed":false,"id":"5772ea11-669c-08db-22be-de764e68b54f"
-                          },
-                          {
-                            "title":"Go out of your way to make the first day a success.","order":6,"completed":false,"id":"8001125b-1fa5-1332-c1b5-2b80f04fc627"
-                          },
-                          {
-                            "title":"Lay out the plan and expectations for the upcoming weeks.","order":7,"completed":false,"id":"a4806e3e-fd62-ca96-e9a8-639e74836e70"
-                          },
-                          {
-                            "title":"Identify and notify the colleagues who need to participate proactively on the first day.","order":4,"completed":false,"id":"e51ec051-b1e2-94bb-1351-ce7bc8dd0a2d"
-                          },
-                          {
-                            "title":"Schedule a short meeting with the management and set up lunch with peers.","order":5,"completed":false,"id":"ed73441c-9aff-89b3-11f9-bd5fec919c4c"
-                          }]);
+			app.todos.fetch({reset: true});
+                        if (app.todos.length == 0)
+                        {
+                          app.todos.reset([
+                            {
+                              "title":"Set up the work environment, including the desk, computer, email address and phone.","order":3,"completed":false,"id":"1d30fe19-cc2d-1db4-5a78-819ef9583ad2"
+                            },
+                            {
+                              "title":"Send out a welcome email to announce the arrival of the new hire two weeks prior the first day.","order":2,"completed":false,"id":"49d252fe-0660-0fae-5e95-17b0e411a3c4"
+                            },
+                            {
+                              "title":"Send reference materials and the schedule of the upcoming days.","order":1,"completed":false,"id":"5772ea11-669c-08db-22be-de764e68b54f"
+                            },
+                            {
+                              "title":"Go out of your way to make the first day a success.","order":6,"completed":false,"id":"8001125b-1fa5-1332-c1b5-2b80f04fc627"
+                            },
+                            {
+                              "title":"Lay out the plan and expectations for the upcoming weeks.","order":7,"completed":false,"id":"a4806e3e-fd62-ca96-e9a8-639e74836e70"
+                            },
+                            {
+                              "title":"Identify and notify the colleagues who need to participate proactively on the first day.","order":4,"completed":false,"id":"e51ec051-b1e2-94bb-1351-ce7bc8dd0a2d"
+                            },
+                            {
+                              "title":"Schedule a short meeting with the management and set up lunch with peers.","order":5,"completed":false,"id":"ed73441c-9aff-89b3-11f9-bd5fec919c4c"
+                            }]);
+                        }
                         
 		},
 

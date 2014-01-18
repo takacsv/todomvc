@@ -41,7 +41,7 @@ input[type="checkbox"] {
 #todoapp {
 	background: #fff;
 	background: rgba(255, 255, 255, 0.9);
-	margin: 130px 0 40px 0;
+	margin: 100px 0 40px 0;
 	border: 1px solid #ccc;
 	position: relative;
 	border-top-left-radius: 2px;
@@ -73,7 +73,8 @@ input[type="checkbox"] {
 #todoapp h1 {
 	position: absolute;
 	top: -120px;
-	width: 100%;
+	width: 730px;
+        margin-left: -95px;
 	font-size: 70px;
 	font-weight: bold;
 	text-align: center;
@@ -155,6 +156,7 @@ label[for='toggle-all'] {
 }
 
 #toggle-all {
+        display: none;
 	position: absolute;
 	top: -42px;
 	left: -4px;
@@ -241,9 +243,7 @@ label[for='toggle-all'] {
 }
 
 #todo-list li label {
-	white-space: pre;
-	word-break: break-word;
-	padding: 15px 60px 15px 15px;
+	padding: 15px;
 	margin-left: 45px;
 	display: block;
 	line-height: 1.2;
@@ -347,6 +347,7 @@ label[for='toggle-all'] {
 }
 
 #clear-completed {
+        display: none !important;
 	float: right;
 	position: relative;
 	line-height: 20px;
